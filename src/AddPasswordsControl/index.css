@@ -1,0 +1,35 @@
+.no-passwords-view-top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.add-password-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.password-manager-image {
+  height: 500px;
+  width: 500px;
+}
+.website-image {
+  height: 35px;
+  width: 35px;
+}
+.search-icon {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.no-passwords-img {
+  height: 540px;
+  width: 600px;
+}
+.password-count-container {
+  display: flex;
+  flex-direction: row;
+}
+.your-passwd-heading {
+  font-size: 20px;
+  margin-right: 20px;
+}
