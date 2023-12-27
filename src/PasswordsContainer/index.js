@@ -4,7 +4,7 @@ const PasswordsContainer = props => {
   const {eachItem, colorList, deleteFunction} = props
   const {id, website, username, password, showPassword} = eachItem
 
-  const stars = () => (
+  const stars = (
     <img
       src="https://assets.ccbp.in/frontend/react-js/password-manager-stars-img.png"
       alt="stars"

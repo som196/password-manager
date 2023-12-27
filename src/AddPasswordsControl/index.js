@@ -75,7 +75,7 @@ class AddPasswordsControls extends Component {
     const {website, username, password, latestList} = this.state
 
     let {passwordsLengthZero} = this.state
-    console.log(latestList.length)
+    console.log(Math.random() * 5)
 
     if (latestList.length === 0) {
       passwordsLengthZero = true
@@ -103,12 +103,10 @@ class AddPasswordsControls extends Component {
             </div>
           </div>
           <div className="show-passwd-container">
-            <input
-              type="checkbox"
-              id="show-password"
-              onClick="changeShowPassword"
-            />
-            <label htmlFor="show-password">Show passwords</label>
+            <input type="checkbox" id="show-password" />
+            <label htmlFor="show-password" onClick={this.changeShowPassword}>
+              Show passwords
+            </label>
           </div>
 
           <img
