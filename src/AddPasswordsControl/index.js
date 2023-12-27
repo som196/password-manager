@@ -67,6 +67,10 @@ class AddPasswordsControls extends Component {
     this.setState({latestList: filteredList})
   }
 
+  changeShowPassword = () => {
+    this.setState(prevState => ({showPassword: !prevState.showPassword}))
+  }
+
   render() {
     const {website, username, password, latestList} = this.state
 
@@ -98,8 +102,14 @@ class AddPasswordsControls extends Component {
               <input type="search" placeholder="Search" />
             </div>
           </div>
-          <input type="checkbox" id="show-password" />
-          <label htmlFor="show-password">Show passwords</label>
+          <div className="show-passwd-container">
+            <input
+              type="checkbox"
+              id="show-password"
+              onClick="changeShowPassword"
+            />
+            <label htmlFor="show-password">Show passwords</label>
+          </div>
 
           <img
             src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png"
@@ -127,7 +137,11 @@ class AddPasswordsControls extends Component {
               <input type="search" placeholder="Search" />
             </div>
           </div>
-          <ul>
+          <div className="show-passwd-container">
+            <input type="checkbox" id="show-password" />
+            <label htmlFor="show-password">Show passwords</label>
+          </div>
+          <ul className="unordered-list-passwords">
             {latestList.map(eachItem => (
               <PasswordsContainer
                 eachItem={eachItem}

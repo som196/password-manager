@@ -1,0 +1,6 @@
+.password-details-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 10px;
+}

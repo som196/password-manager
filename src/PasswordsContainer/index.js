@@ -18,7 +18,7 @@ const PasswordsContainer = props => {
   }
 
   return (
-    <li>
+    <li className="password-details-list">
       <p>{website[0]}</p>
       <div>
         <p>{website}</p>
